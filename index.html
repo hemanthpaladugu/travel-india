@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="one.css">
+
+
+
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="ind.png" width="18%" height="18%" style="float: left;" > Travel india</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Our Tours
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="trip.html">Leh</a>
+          <a class="dropdown-item" href="trip.html">Kerala</a>
+          <a class="dropdown-item" href="trip.html">Andaman</a>
+          <a class="dropdown-item" href="trip.html">Rahjasthan</a>
+          <a class="dropdown-item" href="trip.html">Sikkim</a>
+          <a class="dropdown-item" href="trip.html">Andhra Pradesh</a>
+        </div>
+
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About India</a>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="nav-link" href="Contact.html">Contact Us</a>
+      </li>
+  </ul>  
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ 
+<table> 
+  <tr>
+    <td style="padding: 100px">
+
+       
+
+<form action="/action_page.php" onsubmit="return result();">
+  <label for="date" id="a"><h3><i>PLan your Trip</i></h3></label>
+  <input type="date" id="birthday" name="birthday"><br>
+  <!-- <input type="submit"> -->
+</form>
+<script type="text/javascript">
+  function results(){
+    var date = document.getElementById('a').value;
+    var birthday = document.getElementById('birthday').value;
+    document.write(a + "</br");
+    document.write(birthday + "</br");
+  }
+</script>
+      <td>
+
+        <div>
+          
+           <div class="dropdown">
+
+          <button  onclick="myFunction()" class="dropbtn">Destination</button>
+          <div id="myDropdown-destination" class="dropdown-content">
+            <a href="trip.html">Leh</a>
+            <a href="trip.html">Kerala</a>
+            <a href="trip.html">Andaman</a>
+            <a href="trip.html">Rajasthan</a>
+            <a href="trip.html">Sikim</a>
+            <a href="trip.html">Andhra Pradesh</a>
+          </div>
+
+        </div>
+          <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown-destination").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+      </td> 
+  </tr>
+</table>
+
+
+<!--footet-->
+
+<div style="background-color: #eee;width: 100%; height: 384px;display: inline-block;position: relative;">
+        <div style="margin-left: 100px; margin-right:100px; margin-top: 20px; margin-bottom: 0px ;float: right;" class="footer">
+           <h2> Follow us </h2><br>
+           <p><img src="https://img.icons8.com/fluent/40/000000/facebook-new.png"/> Facebook  &#160;&#160;&#160;&#160; <img src="https://img.icons8.com/fluent/40/000000/instagram-new.png"/>Instagram &#160;&#160;&#160;&#160; <img src="https://img.icons8.com/fluent/40/000000/twitter.png"/> Twitter </p><hr>
+           <h2>Contact Us</h2>
+           <img src="https://img.icons8.com/material-two-tone/24/000000/near-me.png"/>
+
+           <pre style="display: inline;"> New York Headquarters<br><h6 style="opacity: 0.5">    102 madison avenue-second floor<br>    new york,ny-10016<br><br><h6></h6><img src="https://img.icons8.com/material-sharp/24/000000/phone.png"/> +91 9603074755<br><br><img src="https://img.icons8.com/material-outlined/24/000000/new-post.png"/> info@travelindia.com
+           </pre>
+        
+        </div>
+       <div>
+
+           <h3 style="margin-top: 20px; padding-left: 50px">About Us</h3>
+           <div style="padding-left: 50px">
+           Travel India is a newly setup tours and travel company and a destination management expert that offers all-inclusive tours to India. This is the primary website of the company, Travel India Pvt. Ltd., and features best possible tours to every possible tourist destination in India. Travel India will provide you all the facilities whilst you are on your personal journey - the journey of a lifetime. Believe us when we say, Possibilities are Unlimited - You only need your imagination to find them and guts to live them. Our mission is to provide Quality and excellence to our customers promptly and exclusively. All the professionals at Travel India are masters of their trade and each brings with him/her a unique set of experience adding value to the traveler's overall experience of the country. To put it simply, we know what a traveler anticipates and more than that we know what it takes to satisfy them.
+
+
+           </div>
+
+           
+       </div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
